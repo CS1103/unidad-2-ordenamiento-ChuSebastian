@@ -1,3 +1,4 @@
+#include "QuickSort.h"
 #include "ShellSort.h"
 #include "Display.h"
 #include <fstream>
@@ -9,10 +10,25 @@ int main() {
 	Display(A);
 	cout << endl;
 
+	//quick sort
+	//quick_sort(A, 0, A.size() - 1);
+	
+	
+	
 	//shell sort
 	shell_sort(A);
 	Display(A);
 	cout << endl;
+
+
+
+
+
+
+
+
+
+
 
 	//leer el archivo csv
 	ifstream myFile;
@@ -21,7 +37,7 @@ int main() {
 	while (myFile.good()) {
 		string line;
 		getline(myFile, line, ',');
-		//cout << line << ", ";  ----- imprime el archivo csv
+		cout << line << ", "; // ----- imprime el archivo csv
 		
 	}
 	cout << endl;
