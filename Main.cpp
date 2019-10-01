@@ -7,13 +7,19 @@
 int main() {
 	//prueba de que el ordenamiento funciona
 	vector <double> A{ 3.3, 4.5, 1.3, 8.5, 1.6 };
+	cout << "Vector inicial: " << endl;
 	Display(A);
 	cout << endl;
 
 	//quick sort
-	//quick_sort(A, 0, A.size() - 1);
-	
+	cout << "Quick sort: " << endl;
+	quick_sort(A, 0, A.size() - 1);
+	Display(A);
+	cout << endl;
+
+
 	//shell sort
+	cout << "Shell sort: " << endl;
 	shell_sort(A);
 	Display(A);
 	cout << endl;
