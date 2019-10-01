@@ -1,9 +1,9 @@
 #pragma once
 
-template <typename T>
-int partition(vector<T>& A, int left, int right) {
+/*template <typename T>
+int partition(vector<T> A, int left, int right) {
 	int pivotIndex = left + (right - left) / 2;
-	T pivotValue = A[pivotIndex];
+	int pivotValue = A[pivotIndex];
 	int i = left, j = right;
 	int temp;
 	while (i <= j) {
@@ -34,3 +34,4 @@ void quick_sort(vector <T>& A, int left, int right) {
 	}
 }
 
+*/

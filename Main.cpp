@@ -13,24 +13,12 @@ int main() {
 	//quick sort
 	//quick_sort(A, 0, A.size() - 1);
 	
-	
-	
 	//shell sort
 	shell_sort(A);
 	Display(A);
 	cout << endl;
 
-
-
-
-
-
-
-
-
-
-
-	//leer el archivo csv
+	/*leer el archivo csv
 	ifstream myFile;
 	myFile.open("datafile.csv");
 
@@ -41,9 +29,7 @@ int main() {
 		
 	}
 	cout << endl;
-
-
-
+	*/
 
 }
 

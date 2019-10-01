@@ -20,11 +20,4 @@ void shell_sort(vector <T>& A) {
 	}
 }
 
-template <typename T>
-void swap(T& small, T large) {
-	T temp = large;
-	large = small;
-	small = temp;
-}
-
 
