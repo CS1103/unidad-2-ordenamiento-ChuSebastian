@@ -20,14 +20,12 @@ int main() {
     vector <Record> records = VectorRecords();
 
 
-/*
+
     MaxHeap(records,false);
     ImprimirArchivo("MaxHeap1.csv",records);
     MaxHeap(records,true);
     ImprimirArchivo("MaxHeap2.csv",records);
 
-
-*/
     shell_sort(records);
     ImprimirArchivo("Shell1.csv",records);
 
