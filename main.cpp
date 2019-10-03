@@ -25,16 +25,17 @@ int main() {
     ImprimirArchivo("MaxHeap1.csv",records);
     MaxHeap(records,true);
     ImprimirArchivo("MaxHeap2.csv",records);
-    quick_sort(records,2,3);
-    ImprimirArchivo("Quick1.csv",records);
-*/
 
+
+*/
     shell_sort(records);
     ImprimirArchivo("Shell1.csv",records);
-    shell_sort(records,true);
-    ImprimirArchivo("Shell2.csv",records);
 
+    merge_sort(records);
+    ImprimirArchivo("Merge1.csv", records);
 
+    quick_sort(records,2,3);
+    ImprimirArchivo("Quick1.csv",records);
 
 
     return 0;
