@@ -1,54 +1,41 @@
-#include "QuickSort.h"
-#include "ShellSort.h"
-#include "MergeSort.h"
-#include "HeapSort.h"
-#include "Display.h"
+#include <iostream>
 #include <fstream>
-#include <string>
+#include "Definiciones.h"
+#include "Split.h"
+#include "Record.h"
+#include "General.h"
+#include "HeapSort.h"
+#include <algorithm>
+#include "MergeSort.h"
+#include "ShellSort.h"
+#include "QuickSort.h"
+
+using namespace std;
+
+
 
 int main() {
-	
-	
-	//prueba de que el ordenamiento funciona
-	vector <double> A{ 3.3, 4.5, 1.3, 8.5, 1.6 };
-	cout << "Vector inicial: " << endl;
-	Display(A);
-	cout << endl;
-
-	//quick sort
-	cout << "Quick sort: " << endl;
-	quick_sort(A, 0, A.size() - 1);
-	Display(A);
-	cout << endl;
 
 
-	//merge sort
-	cout << "Merge sort: " << endl;
-	merge_sort(A);
-	Display(A);
-	cout << endl;
-
-
-	//shell sort
-	cout << "Shell sort: " << endl;
-	shell_sort(A);
-	Display(A);
-	cout << endl;
+	vector <Record> records = VectorRecords();
 
 
 	/*
-	//leer el archivo csv
-	ifstream myFile;
-	myFile.open("datafile.csv");
-
-	while (myFile.good()) {
-		string line;
-		getline(myFile, line, ',');
-		cout << line << ", "; // ----- imprime el archivo csv
-		
-	}
-	cout << endl;
+	MaxHeap(records, false);
+	ImprimirArchivo("MaxHeap1.csv", records);
+	MaxHeap(records, true);
+	ImprimirArchivo("MaxHeap2.csv", records);
+	quick_sort(records, 2, 3);
+	ImprimirArchivo("Quick1.csv", records);
 	*/
 
-}
+	shell_sort(records,true);
+	ImprimirArchivo("Shell1.csv", records);
+	shell_sort(records, true);
+	ImprimirArchivo("Shell2.csv", records);
 
+
+	
+
+	return 0;
+}
