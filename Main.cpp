@@ -29,7 +29,7 @@ int main() {
 	ImprimirArchivo("Quick1.csv", records);
 	*/
 
-	shell_sort(records,true);
+	shell_sort(records);
 	ImprimirArchivo("Shell1.csv", records);
 	shell_sort(records, true);
 	ImprimirArchivo("Shell2.csv", records);
